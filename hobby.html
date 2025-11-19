@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>𓍢ִ໋🀦Hobby | ꨄ︎ Laila Afiqah ꨄ︎</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="https://i.postimg.cc/ZnrkcYrG/image.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --muted: #F6F3EF;
+      --radius: 14px;
+      font-family: 'Inter', sans-serif;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      margin: 0;
+      background-color:#84a98c;
+    }
+
+    html {
+        scroll-behavior: smooth; 
+    }
+    
+   
+     .page-nav {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        z-index: 100; 
+    }
+
+ .nav-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%; 
+
+        background: rgba(47, 62, 70, 0.9); 
+        color: #fff; 
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        text-decoration: none;
+        font-size: 1.8em;
+        line-height: 1; 
+        margin: 5px 0; 
+        
+        transition: background 0.3s ease, border-color 0.3s ease;
+        cursor: pointer;
+    }
+
+    .nav-button:hover {
+        background: #52796f; 
+        border-color: #52796f;
+    }
+
+    .page-nav .nav-button {
+    margin: 5px 0; 
+}
+
+
+
+.page-nav2 {
+    position: fixed; 
+    top: 50%; 
+    transform: translateY(-50%);
+    z-index: 90;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between; 
+    pointer-events: none; 
+}
+
+ .nav-button2 {
+display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+    pointer-events: auto; 
+    transition: transform 0.3s ease; 
+    background: transparent;
+    border: none;
+    font-size: 0 
+}
+
+
+.left-control, .right-control {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.left-control {
+    background-image: url('https://i.postimg.cc/26FxK8Yw/image.png');
+}
+
+.right-control {
+    background-image: url('https://i.postimg.cc/26FxK8Yw/image.png');
+}
+
+    .nav-button2:hover {
+      transform: scale(1.1); 
+    cursor: pointer;
+}
+
+    header {
+    background: #cad2c5;
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid rgba(0,0,0,0.05)
+    }
+
+     
+
+.photo-section img {
+    width: 20%;
+    height:250px;
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom:-50px;
+    margin-top:0;
+    padding-top:70px
+}
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      gap: 8px;
+      color: #2f3e46;
+    }
+
+    .nav a {
+     text-decoration: none;
+      color: #333;
+      margin: 0 10px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+      color: #52796f;
+    }
+
+    main {
+      padding: 0;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+      color: #2f3e46;
+    }
+
+    h1 {
+      color: #2f3e46;
+      font-size: 2.2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: var(--radius);
+      height: 180px;
+      object-fit: cover;
+    }
+
+
+    .card h3 {
+      color: #354f52;
+      margin-top: 16px;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+      text-align: justify;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 16px;
+      background-color: #2f3e46;
+      color: white;
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #52796f;
+}
+
+  .photo-section img {
+    width: 20%;
+    height:250px;
+    display:flex;
+   align-items: right;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom:-30px;
+    margin-top:-100px;
+
+}
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  #cad2c5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 1.5s ease-out;
+}
+
+.totoro-container {
+    display: flex;
+    gap: 15px; 
+    margin-bottom: 20px;
+}
+
+.totoro-gif {
+    width: 80px; 
+    height: 80px;
+   
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); } 
+    100% { transform: scale(1); }
+}
+
+
+.totoro-gif:nth-child(1) {
+    animation: pulse 1.2s infinite ease-in-out;
+    animation-delay: 0s;
+}
+
+.totoro-gif:nth-child(2) {
+    animation: pulse 1.2s infinite ease-in-out;
+    animation-delay: 0.2s; 
+}
+
+.totoro-gif:nth-child(3) {
+    animation: pulse 1.2s infinite ease-in-out;
+    animation-delay: 0.4s; 
+}
+
+.social-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #354f52; 
+    color: #cad2c5; 
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: transform 0.5s ease-out, background-color 0.3s;
+}
+
+
+.footer-icon:hover {
+    background-color: #52796f; 
+    transform: rotate(360deg) scale(1.1);
+}
+
+
+
+.duckie-fixed {
+  position: fixed; 
+  bottom: 0; 
+  left: 10px; 
+  z-index: 100; 
+  width: 120px; 
+  height: auto;
+}
+
+
+footer {
+background-color:#cad2c5 ;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  margin-top: 0;
+  position: sticky;
+      text-align: center;
+      padding: 30px;
+      color: #52796f;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="loading-screen">
+    <div class="totoro-container">
+        <img src="https://i.postimg.cc/50DtJPyp/none-(1).gif" class="totoro-gif" alt="Totoro Loading 1">
+        <img src="https://i.postimg.cc/50DtJPyp/none-(1).gif" class="totoro-gif" alt="Totoro Loading 2">
+        <img src="https://i.postimg.cc/50DtJPyp/none-(1).gif" class="totoro-gif" alt="Totoro Loading 3">
+    </div>
+    <p>Loading...</p>
+</div>
+
+  <header>
+    <div class="logo">ꨄ︎ Laila Afiqah ꨄ︎</div>
+    <nav class="nav">
+      <a href="index.html">⌂♡Home</a>
+      <a href="about.html">𐙚About</a>
+      <a href="hobby.html" class="active">𓍢ִ໋🀦Hobby</a>
+      <a href="fav.html">𖹭.ᐟMyFav</a>
+      <a href="contact.html">۶ৎContact</a>
+    </nav>
+  </header>
+
+   <section class="photo-section" id="top">
+    <img src="https://i.postimg.cc/Wb27m76B/Untitled-design-removebg-preview.png" alt="My Picture">
+</section>
+
+  <main>
+    <h1 style="margin-top:-5px">My Hobbies ✨</h1>
+    <p>Here are my hobbies during my leisure time or during holiday.</p>
+
+    <div class="grid">
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/ba/5e/b2/ba5eb2e7915eb2c915f10f5a2a05a685.jpg" alt="Hobby 1">
+        <h3>Read Book</h3>
+        <p>Reading is my primary source of continuous learning and self-discovery. It's a structured escape that allows me to deeply observe new worlds and perspectives, satisfying my need for knowledge and quiet focus.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/07/c7/ce/07c7ceab40f51c19dfb465c4675a8bc4.jpg" alt="Hobby 2">
+        <h3>Baking</h3>
+        <p>Baking is a delightful mix of science and aesthetics. It appeals to my organized side by requiring precise structure and measurement, yet rewards me with a warm, beautiful, and tangible result.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.postimg.cc/jq6VjcSN/image.png" alt="Hobby 3">
+        <h3>Drawing</h3>
+        <p>Drawing is my outlet for visual clarity. It allows me to translate my observations and ideas into clean lines and simple forms, making it a meditative exercise in creativity and focus.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.uluyoga.com/wp-content/uploads/2023/03/arabian-muslim-islamic-woman-in-hijab-meditating-on-exercise-mat-in-the-living-room-using-laptop.jpg" alt="Hobby 4">
+        <h3>Meditation</h3>
+        <p>Meditation is the foundation for my calm presence. It's the intentional daily practice of decluttering the mind, ensuring I approach every other task with focus, peace, and high energy.</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV1N4MUZ6dq3bXPWocug9aBXCZvZYKtcYS6g&s" alt="Hobby 5">
+        <h3>Stretching</h3>
+        <p>Stretching is my simple routine for physical alignment and mindfulness. It's a structured practice that promotes well-being and ensures my body matches the calm, low-stress energy of my mind.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/4b/9b/bf/4b9bbf52108c2c09ffa4de39cf33857a.jpg" alt="Hobby 6">
+        <h3>Watch Anime</h3>
+        <p>Watching anime is a source of vibrant inspiration and creative storytelling. I enjoy curating my watchlist and observing the unique, imaginative worlds—it's entertainment that fuels my visual aesthetic.</p>
+      </div>
+    </div>
+
+    <a href="fav.html" class="btn">Visit MyFav</a>
+  </div>
+    </div>
+  </main>
+
+  <section class="photo-section">
+  <img src="https://i.postimg.cc/g0JXHrXT/Ghibli-Sen-to-Chihiro-no-kamik-unscreen.gif" alt="grandma">
+</section>
+
+
+  <img src="https://i.postimg.cc/j2Nr8jqm/image.png" alt="duckie" class="duckie-fixed">
+  
+
+  <footer id="footer-content">
+    <div class="social-links">
+        <a href="https://www.instagram.com/lailaafiqahhh?igsh=YWRjNHhpc2M0em93" target="_blank" class="footer-icon instagram-icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@adarknightprncss?_r=1&_t=ZS-91X0mnLoXOU" target="_blank" class="footer-icon tiktok-icon">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.threads.com/@lailaafiqahhh" target="_blank" class="footer-icon threads-icon">
+            <i class="fab fa-threads"></i>
+        </a>
+        <a href="www.linkedin.com/in/laila-afiqah-03635a29a" target="_blank" class="footer-icon linkedin-icon">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+
+    © 2025 ꨄ︎ Laila Afiqah ꨄ︎ — All Rights Reserved.
+  </footer>
+
+  <div class="page-nav">
+    <a href="#top" class="nav-button up">↑</a>
+    <a href="#footer-content" class="nav-button down">↓</a>
+</div>
+
+<div class="page-nav2">
+    <a href="about.html" class="nav-button2 left-control"></a> 
+    <a href="fav.html" class="nav-button2 right-control"></a>
+</div>
+
+<script>
+    
+    window.addEventListener('load', function() {
+        const loadingScreen = document.getElementById('loading-screen');
+        
+        setTimeout(function() {
+        
+        loadingScreen.style.opacity = '0';
+        
+        setTimeout(function() {
+            loadingScreen.style.display = 'none';
+        }, 3000); 
+      }, 3000);
+        
+    });
+</script>
+
+</body>
+</html>
+
+
