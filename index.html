@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>⌂♡Home | ꨄ︎ Laila Afiqah ꨄ︎</title>
+  <link rel="icon" type="image/png" href="https://i.postimg.cc/ZnrkcYrG/image.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ <style>
+    :root {
+      --muted: #F6F3EF;
+      --radius: 14px;
+      font-family: 'Inter', sans-serif;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      margin: 0;
+      background-image: url('https://i.pinimg.com/736x/4a/6b/13/4a6b1378c92f3823732908508f1fd9b1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+            padding-bottom: 0;
+      
+    }
+
+    html {
+        scroll-behavior: smooth; 
+    }
+    
+    .page-nav {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        z-index: 100; 
+    }
+
+ .nav-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%; 
+
+        background: rgba(47, 62, 70, 0.9); 
+        color: #fff; 
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        text-decoration: none;
+        font-size: 1.8em;
+        line-height: 1; 
+        margin: 5px 0; 
+        
+        transition: background 0.3s ease, border-color 0.3s ease;
+        cursor: pointer;
+    }
+
+    .nav-button:hover {
+        background: #52796f; 
+        border-color: #52796f;
+    }
+
+    .page-nav .nav-button {
+    margin: 5px 0; 
+}
+
+
+
+.page-nav2 {
+    position: fixed; 
+    top: 50%; 
+    transform: translateY(-50%);
+    z-index: 90;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between; 
+    pointer-events: none; 
+}
+
+ .nav-button2 {
+display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+    pointer-events: auto; 
+    transition: transform 0.3s ease; 
+    background: transparent;
+    border: none;
+    font-size: 0 
+}
+
+
+.left-control, .right-control {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.left-control {
+    background-image: url('https://i.postimg.cc/26FxK8Yw/image.png');
+}
+
+.right-control {
+    background-image: url('https://i.postimg.cc/26FxK8Yw/image.png');
+}
+
+    .nav-button2:hover {
+      transform: scale(1.1); 
+    cursor: pointer;
+}
+
+
+
+    
+    header {
+
+      background: #cad2c5;
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      
+    }
+
+    .photo-section img {
+    width: 20%;
+    height:250px;
+    display:block;
+    align-items: center;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom:-30px;
+    margin-top:-30px;
+}
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      gap: 8px;
+      color: #2f3e46;
+      
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 10px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+      color: #52796f;
+    }
+
+    main {
+      padding: 0;
+      text-align:left;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #2f3e46;
+    }
+
+    h1 {
+      color: #2f3e46;
+      font-size: 2.2rem;
+      text-align:left;
+      display: inline-block; 
+        animation: wavy 4s ease-in-out infinite;
+        margin-right: 5px; 
+    }
+
+
+
+   .flex-container {
+  display: flex;
+  align-items: center; 
+  gap: 20px; 
+
+}
+
+.flex-container img {
+  width: 200px;
+  flex-shrink: 0; 
+}
+.text-content  {
+  margin-bottom: 15px; 
+}
+
+
+    p {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align:left;
+      line-height: 1.6;
+      color:#354f52;
+      
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 16px;
+      background-color: #2f3e46;
+      color: white;
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #52796f;
+      
+}
+
+ 
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  #cad2c5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 1.5s ease-out;
+}
+
+.totoro-container {
+    display: flex;
+    gap: 15px; 
+    margin-bottom: 20px;
+}
+
+.totoro-gif {
+    width: 80px; 
+    height: 80px;
+   
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); } 
+    100% { transform: scale(1); }
+}
+
+@keyframes wavy {
+    0% { transform: translateY(0px) rotate(0deg); }
+    25% { transform: translateY(-5px) rotate(-1deg); }
+    50% { transform: translateY(0px) rotate(0deg); }
+    75% { transform: translateY(5px) rotate(1deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes float {
+    0% { transform: translatey(0px); }
+    50% { transform: translatey(-15px); }
+    100% { transform: translatey(0px); }
+}
+
+.totoro-gif:nth-child(1) {
+    animation: pulse 1.2s infinite ease-in-out;
+    animation-delay: 0s;
+}
+
+.totoro-gif:nth-child(2) {
+    animation: pulse 1.2s infinite ease-in-out;
+    animation-delay: 0.2s; 
+}
+
+.totoro-gif:nth-child(3) {
+    animation: pulse 1.2s infinite ease-in-out;
+    animation-delay: 0.4s; 
+}
+
+.social-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #354f52; 
+    color: #cad2c5; 
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: transform 0.5s ease-out, background-color 0.3s;
+}
+
+
+.footer-icon:hover {
+    background-color: #52796f; 
+    transform: rotate(360deg) scale(1.1);
+      
+}
+    
+
+.girl-fixed {
+  position: fixed; 
+  bottom: 0; 
+  left: 10px; 
+  z-index: 100; 
+  width: 120px; 
+  height: auto;
+}
+     
+footer {
+ background: #cad2c5;
+   backdrop-filter: blur(10px);
+  padding: 20px;
+  text-align: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  margin-top: 210px;
+  position: sticky;
+      text-align: center;
+      padding: 30px;
+     color: #52796f;
+      font-size: 0.9rem;
+
+}
+
+.hamburger {
+            display: none; /* Sembunyikan secara default pada desktop */
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: #2f3e46; /* Warna ikon */
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            z-index: 11; /* Pastikan ia berada di atas menu apabila dibuka */
+        }
+
+        /* MEDIA QUERY UNTUK MOBILE */
+        @media screen and (max-width: 768px) {
+            
+            /* 1. Tunjukkan Ikon Hamburger */
+            .hamburger {
+                display: block; 
+            }
+
+            /* 2. Tukar Header untuk Menangani Menu Pop-out */
+            header {
+                padding: 14px 20px; /* Kurangkan padding sisi */
+            }
+
+            /* 3. Sembunyikan Navigasi Asal (dan susun menegak) */
+            .nav {
+                display: none; /* Sembunyikan menu pada mobile */
+                
+                flex-direction: column; /* Menu akan tersusun menegak */
+                position: absolute;
+                top: 52px; /* Letak di bawah header */
+                left: 0;
+                width: 100%;
+                background-color: #cad2c5; /* Latar belakang sama dengan header */
+                box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+                border-bottom-left-radius: var(--radius);
+                border-bottom-right-radius: var(--radius);
+                padding-bottom: 10px;
+            }
+
+            /* 4. Tunjukkan Menu apabila Kelas 'active' Ditambah oleh JS */
+            .nav.active {
+                display: flex; /* Tunjukkan menu */
+            }
+            
+            .nav a {
+                margin: 0;
+                padding: 10px 24px;
+                text-align: center;
+                border-bottom: 1px solid rgba(0,0,0,0.05);
+            }
+
+            /* 5. Susun Atur Kandungan Utama (Gambar dan Teks) */
+            .flex-container {
+                flex-direction: column; /* Susun gambar atas, teks bawah */
+                text-align: center;
+                gap: 5px;
+            }
+
+            .flex-container img {
+                width: 150px; /* Kecilkan sedikit gambar Totoro */
+            }
+
+            h1 {
+                font-size: 1.8rem; /* Kecilkan tajuk */
+                text-align: center;
+            }
+            
+            .text-content {
+                padding: 0 15px; /* Tambah padding sisi untuk teks */
+            }
+            
+            p {
+                text-align: center; /* Tengah-tengahkan teks */
+            }
+            
+            .btn {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        
+        /* Media Query untuk menyembunyikan elemen hiasan tambahan pada mobile */
+        @media screen and (max-width: 500px) {
+            .girl-fixed {
+                display: none; /* Sembunyikan gambar gadis di sudut bawah kiri */
+            }
+            /* Sembunyikan juga butang navigasi page-nav2 jika terlalu mengganggu */
+            .page-nav2 {
+                display: none;
+            }
+          }
+    
+  </style>
+</head>
+<body>
+
+ <div id="loading-screen">
+    <div class="totoro-container">
+        <img src="https://i.postimg.cc/50DtJPyp/none-(1).gif" class="totoro-gif" alt="Totoro Loading 1">
+        <img src="https://i.postimg.cc/50DtJPyp/none-(1).gif" class="totoro-gif" alt="Totoro Loading 2">
+        <img src="https://i.postimg.cc/50DtJPyp/none-(1).gif" class="totoro-gif" alt="Totoro Loading 3">
+    </div>
+    <p>Loading...</p>
+</div>
+
+  <header>
+    <div class="logo">ꨄ︎ Laila Afiqah ꨄ︎</div>
+
+    <button class="hamburger" id="hamburger-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+
+    <nav class="nav" id="nav-menu">
+      <a href="index.html" class="active">⌂♡Home</a>
+      <a href="about.html" > 𐙚About</a>
+      <a href="hobby.html">𓍢ִ໋🀦Hobby</a>
+      <a href="fav.html">𖹭.ᐟMyFav</a>
+      <a href="contact.html">۶ৎContact</a>
+    </nav>
+  </header>
+
+  <section class="photo-section" id="top">
+    <img src="https://i.postimg.cc/Wb27m76B/Untitled-design-removebg-preview.png" alt="My Picture">
+</section>
+
+
+  <main>
+    
+    <h1 id="wavy-title">Laila Afiqah's Page ⋅˚₊‧ ୨🕮୧ ‧₊˚ ⋅</h1>
+
+    <div class="flex-container">
+    <img src="https://i.postimg.cc/R0GNvgBQ/flip-(1).gif" alt="Totoro">
+      
+    <div class="text-content">
+    <p>
+    Hello! I’m <strong>Laila Afiqah</strong>, a student, a daughter and and someone who finds comfort in books.
+    Welcome to my world—filled with thoughts, reflections, and creative moments.</p>
+    
+    <p>Thanks for stopping by! I hope you enjoy exploring my space.
+  </p>
+
+  <p style="margin-top:30px"><i><strong>"Welcome to the intersection of calm, structure, and light"</strong></i></p>
+  
+</div>
+</div>
+    
+    <a href="about.html" class="btn">Learn More About Me</a>
+   </div>
+    </div>
+
+
+
+  </main>
+
+  <img src="https://i.postimg.cc/wvy9RpPS/image.png" alt="girl" class="girl-fixed">
+
+  
+  <footer id="footer=content">
+ <div class="social-links">
+        <a href="https://www.instagram.com/lailaafiqahhh?igsh=YWRjNHhpc2M0em93" target="_blank" class="footer-icon instagram-icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@adarknightprncss?_r=1&_t=ZS-91X0mnLoXOU" target="_blank" class="footer-icon tiktok-icon">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.threads.com/@lailaafiqahhh" target="_blank" class="footer-icon threads-icon">
+            <i class="fab fa-threads"></i>
+        </a>
+        <a href="www.linkedin.com/in/laila-afiqah-03635a29a" target="_blank" class="footer-icon linkedin-icon">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+
+    © 2025 ꨄ︎ Laila Afiqah ꨄ︎ — All Rights Reserved.
+  </footer>
+
+  <div class="page-nav">
+    <a href="#top" class="nav-button up">↑</a>
+    <a href="#footer-content" class="nav-button down">↓</a>
+</div>
+
+<div class="page-nav2">
+<a href="contact.html" class="nav-button2 left-control"></a> 
+<a href="about.html" class="nav-button2 right-control"></a> 
+</div>
+
+<script>
+    
+    window.addEventListener('load', function() {
+        const loadingScreen = document.getElementById('loading-screen');
+        
+        setTimeout(function() {
+        
+        loadingScreen.style.opacity = '0';
+        
+        setTimeout(function() {
+            loadingScreen.style.display = 'none';
+        }, 3000); 
+      }, 3000);
+
+      });
+
+
+      const hamburgerBtn = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburgerBtn.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+    
+        
+    });
+</script>
+
+</body>
+</html>
